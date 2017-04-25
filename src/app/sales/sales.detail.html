@@ -1,0 +1,34 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Edit Customer
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input class="form-control" id="firstName" type="date" ng-model="SalesDetailCtrl.sale.invoiceDate">
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" class="form-control" type="date" ng-model="SalesDetailCtrl.sale.paymentDate">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="">Email Address</label>
+            <input class="form-control" type="text" ng-model="SalesDetailCtrl.sale.emailAddress">
+        </div>
+        <div class="form-group">
+            <label for="">Telephone</label>
+            <input class="form-control" type="text" ng-model="SalesDetailCtrl.sale.telephone">
+        </div>
+    </div>
+    <div class="panel-footer clearfix">
+        <button class="btn btn-success pull-right" ng-click="SalesDetailCtrl.save()">
+      Save <i class="glyphicon glyphicon-save"></i>
+    </button>
+    </div>
+</div>

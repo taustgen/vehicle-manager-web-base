@@ -1,0 +1,44 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Edit Customer
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="make">Make</label>
+          <input class="form-control" id="make" type="text" ng-model="vehiclesDetailCtrl.vehicle.make">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <label for="model">Model</label>
+        <input id="model" class="form-control" type="text" ng-model="vehiclesDetailCtrl.vehicle.model">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input class="form-control" id="year" type="text" ng-model="vehiclesDetailCtrl.vehicle.year">
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <label for="color">Color</label>
+        <input id="color" class="form-control" type="text" ng-model="vehiclesDetailCtrl.vehicle.color">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="">Vehicle Type</label>
+      <input class="form-control" type="text" ng-model="vehiclesDetailCtrl.vehicle.vehicleType">
+    </div>
+    <div class="form-group">
+      <label for="">Retail Price</label>
+      <input class="form-control" type="text" ng-model="vehiclesDetailCtrl.vehicle.retailPrice">
+    </div>
+  </div>
+  <div class="panel-footer clearfix">
+    <button ng-click="vehiclesDetailCtrl.save()"class="btn btn-success pull-right">
+      Save <i class="glyphicon glyphicon-save"></i>
+    </button>
+  </div>
+</div>
